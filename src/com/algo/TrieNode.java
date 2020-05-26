@@ -7,6 +7,7 @@ public class TrieNode {
 	char c;
 	private HashMap<Character, TrieNode> children = new HashMap<>();
 	boolean endOfWord = false;
+	String word=null;
 
 	public TrieNode() {
 	}

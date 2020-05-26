@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.List;
+import java.util.Scanner;
 
 public class MainProgram {
 
@@ -17,7 +19,7 @@ public class MainProgram {
 		String line;
 		while((line=reader.readLine())!=null)
 		{
-			String[] temp=line.split(" ");
+			String[] temp=line.toLowerCase().split(" ");
 			for(String word:temp)
 			{
 				a.insert(word);
@@ -35,9 +37,13 @@ public class MainProgram {
 		else
 			System.out.println("Not Found");*/
 
-		for(String str:a.wordsByPrefix("co"))
-		{
-			System.out.println(str);
+		while(true){
+			Scanner sc =new Scanner(System.in);
+			String word=sc.next();
+		
+		a.wordsByPrefix(word.toLowerCase()).forEach(System.out::println);;
+	
+		
 		}
 	}
 

@@ -76,7 +76,7 @@ public class TrieAlgo {
 			if (t!=null) {
 				children = t.getChildren();
 			} else {
-				return null;
+				return new ArrayList<String>();
 			}
 		}
 		

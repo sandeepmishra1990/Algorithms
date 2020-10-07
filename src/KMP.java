@@ -2,8 +2,8 @@
 public class KMP {
 
 	public static void main(String[] args) {
-		String txt="ABCABAAAABAB";
-		String pat="ABC";
+		String txt="AABAAAABAB";
+		String pat="ABAB";
 		
 		KMP kmp=new KMP();
 		kmp.kmpSearch(txt, pat);
